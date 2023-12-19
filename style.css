@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Creepster&family=Fira+Sans:wght@400;700&family=Marck+Script&family=Poppins&family=Quicksand:wght@300;400;500;600;700&family=Space+Mono&family=Syne:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+body {  
+  display: flex;
+  max-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+p {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.sidebar {
+  font-weight: 700;
+  display: flex;
+  background: rgb(86, 153, 255);
+  width: 15vw;
+  font-size: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.side {
+  padding-top: 30px;
+  padding-left: 20px;
+  color: white;
+}
+
+.sideOption {
+  margin: 0;
+  padding: 0;
+}
+.sideSettings {
+  padding-top: 50px;
+}
+
+
+.top {
+  display: flex;
+  width: 0vw;
+  height: 20vh;
+  position: relative; /
+}
+
+.top::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  height: 8px; 
+  box-shadow: 5px 5px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.search {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.searchIcon {
+  background-image: url("https://img.icons8.com/ios-filled/50/000000/search--v1.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.searchBar {
+  position: relative;
+  color: black;
+  border: none;
+  width: 40vw;
+  height: 35px;
+  margin-top: 0px;
+  border-radius: 15px;
+  background: rgb(226, 226, 238);
+  padding-left: 5px;
+  margin-left: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.project {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.33);
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(3, 450px);
+  grid-gap: 50px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.main {
+  background: rgb(226, 226, 238);
+  flex-grow: 1;
+}
+
+.announcementContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  border: 2px solid red;
+}
+
+.announcement {
+  border: 2px solid red;
+  padding: 10px;
+}
